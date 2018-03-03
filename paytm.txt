@@ -1,0 +1,2 @@
+Some txt file which is used by some java classes.
+
