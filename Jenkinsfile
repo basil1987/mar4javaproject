@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh "/usr/local/apache-ant-1.10.2/bin/ant"
+                sh "export PATH=$PATH:/usr/local/jdk1.8.0_161/bin:/usr/local/jdk1.8.0_161/jre/bin:/usr/local/apache-ant-1.10.2/bin; /usr/local/apache-ant-1.10.2/bin/ant"
             }
         }
         stage('Test') { 
