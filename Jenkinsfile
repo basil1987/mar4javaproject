@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh ant 
+                sh "ant"
             }
         }
         stage('Test') { 
             steps {
-                sh 'echo TESTING'
+                sh "echo TESTING"
             }
         }
         stage('Deploy') { 
             steps {
-                sh 'cp **/*.war /usr/local/apache-tomcat-7.0.85/webapps'
+                sh "cp **/*.war /usr/local/apache-tomcat-7.0.85/webapps"
             }
         }
     }
