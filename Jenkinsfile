@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh "ant"
+                sh "/usr/local/apache-ant-1.10.2/bin/ant"
             }
         }
         stage('Test') { 
